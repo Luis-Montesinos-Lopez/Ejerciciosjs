@@ -19,10 +19,15 @@ let numero=Number(readline.question('Introduce un número: '));
 //         console.log(linea);
 //     }
 for(i=0;i<numero;i++){
-    let linea="*";
-    for(j=0;j<i;j++){
+    let linea="";
+    for(k=0;k<numero-i-1;k++){
+        linea+=" "
+    }
+    linea+="*";
+    for(j=0;j<i*2;j++){
         linea+="*";
     }
+  
     console.log(linea)
 }
 
